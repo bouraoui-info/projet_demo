@@ -1,7 +1,7 @@
 // store.ts
 import { configureStore } from '@reduxjs/toolkit';
 import { combineReducers } from 'redux';
-import storage from 'redux-persist/lib/storage';
+import storageSession from 'redux-persist/lib/storage/session';
 import { persistReducer, persistStore } from 'redux-persist';
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
 
@@ -16,7 +16,7 @@ const rootReducer = combineReducers({
 
 const persistConfig = {
     key: 'root',
-    storage,
+    storage: storageSession,
     whitelist: ['counter'], // specify which reducers you want to persist
 };
 

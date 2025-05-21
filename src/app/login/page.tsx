@@ -70,7 +70,7 @@ export default function AboutPage() {
                         dispatch(addUser([1, 2, 3]));
                         dispatch(increment())
                        // const router = useRouter();
-                        router.push('/admin');
+                      //  router.push('/admin');
 
                     }
 
