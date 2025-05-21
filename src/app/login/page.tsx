@@ -73,8 +73,6 @@ export default function AboutPage() {
                       //  router.push('/admin');
 
                     }
-
-
                     }
                 >
                     Log In
