@@ -13,7 +13,7 @@ export default function Providers({ children }: { children: React.ReactNode }) {
       <PersistGate loading={null} persistor={persistor}>
         {children}
         <ToastContainer
-          position="top-center"
+          position="bottom-right"
           autoClose={3000}
           hideProgressBar={false}
           newestOnTop={false}
